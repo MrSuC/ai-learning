@@ -17,7 +17,13 @@ print(type(100))      # <class 'int'>
 print("\n===== 2. float 浮点数 =====")
 print(3.14 * 2)       # 6.28
 print(0.1 + 0.2)      # 0.30000000000000004  经典精度坑
-print(round(0.1 + 0.2, 2))   # 0.3
+print(round(0.1 + 0.2, 2))   # 0.3 > 四舍六入五成双 - 小于 5 → 舍去 - 大于 5 → 进 1 - **正好等于 5**：看前一位，**偶数就舍去，奇数就进 1**，让最后一位变成偶数
+
+from decimal import Decimal, ROUND_HALF_UP
+num = Decimal("2.675")
+res = num.quantize(Decimal('0.00'), rounding=ROUND_HALF_UP)
+print(res) # 2.68 标准四舍五入
+
 print(type(3.0))      # <class 'float'>
 print(3 == 3.0)       # True  int 和 float 可以比较
 # Java 对照：Python 只有 float 一个浮点，对应 Java 的 double
