@@ -130,3 +130,11 @@ s = "你好".encode("utf-8")   # 字符串 -> 字节
 print(s)                  # b'\xe4\xbd\xa0\xe5\xa5\xbd'
 print(s.decode("utf-8"))  # 你好  字节 -> 字符串
 # Java 对照：相当于 byte[]，网络传输、文件读写常用
+
+# ========== 12. random 随机数 ==========
+import random
+
+random.randint(1, 6)    # 1~6 随机整数（掷骰子）
+random.choice(["石头", "剪刀", "布"])   # 随机挑一个
+random.shuffle(deck)    # 洗牌（原地打乱）
+random.random()         # 0~1 之间的随机小数
