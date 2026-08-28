@@ -134,7 +134,9 @@ print(s.decode("utf-8"))  # 你好  字节 -> 字符串
 # ========== 12. random 随机数 ==========
 import random
 
+deck = ["红桃A", "黑桃K", "方块Q", "梅花J", "红桃10", "黑桃9", "方块8", "梅花7"]
 random.randint(1, 6)    # 1~6 随机整数（掷骰子）
 random.choice(["石头", "剪刀", "布"])   # 随机挑一个
 random.shuffle(deck)    # 洗牌（原地打乱）
 random.random()         # 0~1 之间的随机小数
+
