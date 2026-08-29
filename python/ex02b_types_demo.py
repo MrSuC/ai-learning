@@ -29,7 +29,7 @@ print(3 == 3.0)       # True  int 和 float 可以比较
 # Java 对照：Python 只有 float 一个浮点，对应 Java 的 double
 
 # ========== 3. complex 复数 ==========
-print("\n===== 3. complex 复数 =====")
+print("\n===== 3. complex 康姆普莱克斯 复数 =====")
 z1 = 3 + 4j           # j 是虚数单位（数学里写作 i）
 z2 = complex(1, 2)    # 函数写法
 print(z1.real, z1.imag)   # 3.0 4.0  实部、虚部
@@ -79,7 +79,7 @@ for f in fruits:               # 直接遍历元素
 # Java 对照：相当于 ArrayList，但可以混合类型、负数索引
 
 # ========== 7. tuple 元组 ==========
-print("\n===== 7. tuple 元组 =====")
+print("\n===== 7. tuple 塔普 元组 =====")
 point = (3, 4)
 x, y = point          # 解包：一行拆成两个变量
 print(x, y)           # 3 4
@@ -89,7 +89,7 @@ print(type(single))   # <class 'tuple'>
 # Java 对照：不可变的列表，Java 没有直接对应
 
 # ========== 8. dict 字典 ==========
-print("\n===== 8. dict 字典 =====")
+print("\n===== 8. dict 迪克特 字典 =====")
 user = {"name": "团团", "age": 26}
 print(user["name"])            # 团团  直接按 key 取
 print(user.get("city", "未知"))# 未知  get 没有 key 时给默认值
